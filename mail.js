@@ -7,8 +7,8 @@ let mailTransporter = nodemailer.createTransport({
      secure: false,
      requireTLS: true,
      auth: {
-       user: 'entpsave@gmail.com', //this should be same as 'from' address
-       pass: '#W1ndow123'
+       user: 'email@gmail.com', //this should be same as 'from' address
+       pass: 'helloworld'
       } 
    });
 

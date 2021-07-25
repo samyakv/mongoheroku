@@ -6,7 +6,7 @@ const mailTransporter = require('./mail')
 const app = express()
 
 app.use(bodyParser.json())
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: true
 }))
@@ -50,7 +50,7 @@ app.post("/sign_up", (req, res) => {
 
     
     mailTransporter.sendMail({
-        from: 'entpsave@gmail.com',  //this should be same as above auth.user
+        from: 'email@gmail.com',  //this should be same as above auth.user
         to: `${req.body.email}`,
         subject: 'Test',
         text: 'hello',
