@@ -22,9 +22,6 @@ db.on('error', () => console.log("Error in Connecting to Database"));
 db.once('open', () => console.log("Connected to Database"));
 
 
-
-
-
 app.post("/sign_up", (req, res) => {
     // var name = req.body.name;
     var email1 = req.body.email;
